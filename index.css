@@ -1,0 +1,134 @@
+@font-face {
+  font-family: heavy; /* Имя шрифта */
+  src: url(fonts/Nexa-Heavy.otf); /* Путь к файлу со шрифтом */
+ }
+@font-face {
+  font-family: regular;
+  src: url(/fonts/Fontfabric\ -\ NexaRegular.otf);
+ }
+@font-face {
+  font-family: arial;
+  src: url(/fonts/arial.ttf);
+ }
+@font-face {
+  font-family: arialbt;
+  src: url(/fonts/arialbd.ttf);
+ }
+.header_global {
+  display:grid;
+  font-family: regular;
+  grid-row: header_global  ;
+  grid-column:1 ;
+    width: 100%;
+    height: 66px;
+    background-color: #373737;
+    font-family: Nexa;
+    color: #ffffff;
+    }
+.header_cube {
+    display: grid;
+    grid-row: -2 ;
+    grid-column: 1 ;
+    margin: 0px 0px 0px 300px;
+    width: 78px;
+    height: 66px;
+    background-color: #f26c4f;
+  }
+.header_text {
+  font-family: regular;
+  display:grid;
+  grid-row:  -2 ;
+  grid-column: 1 ;
+  margin: 23px 0px 0px 402px;
+}
+.text_cube {
+  display: flex;
+  align-items: center;
+  font-family: heavy;
+  font-size: 36px;
+  margin: 0% 0px 10px 40%;
+}
+.header_cube_sternch {
+  display: grid;
+  margin: 25px 0px 0px 353px;
+  grid-row: -2;
+  grid-column: 1;
+  height: 20px;
+  width: 40px;
+  background-color: #f26c4f;
+  clip-path: polygon(60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%);
+}
+.to_header{
+  display:grid;
+  grid-row: header_global  ;
+  grid-column:1 ;
+    width: 100%;
+    height: 69px;
+    background-color: #474747;
+    font-family: Nexa;
+    color: #ffffff;
+}
+.to_header_text {
+  font-family: regular;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  /* border-left: 1.5px solid rgb(150, 140, 140); */
+  margin: 12px;
+}
+.bag {
+  color: gray ;
+  margin: 0px 20px 0px 0px;
+}
+._animation {
+  height: 20px;
+  width: 40px;
+  background-color: #f26c4f;
+}
+.global {
+  font-family: arial;
+}
+.search {
+  background: #ffffff;
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.search input, .search button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search input {
+  font-family: arial;
+  font-weight: bold;
+  font-size: 13px; /* текст */
+  box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.137); /* Параметры тени */
+  padding-left: 15px;
+  width: 100%;
+  height: 42px;
+  border: 2px outset #ffffff;
+  outline: none;
+  background: #ffffff;
+  color: #9E9C9C;
+  cursor: pointer;
+}
+.search button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+.search button:before {
+  content: "....";
+  background-image: url(/png/time.png);
+  background-size: 100%;
+  color: #f26d4f00;
+}
