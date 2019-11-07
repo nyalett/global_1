@@ -14,32 +14,43 @@
   font-family: arialbt;
   src: url(/fonts/arialbd.ttf);
  }
-.header_global {
-  display:grid;
+ .header_global{
+   display: flex;
+   width: 20px;
+   justify-content: flex-start;
+   display: flex;
+   position: fixed;
+   margin: 0px 0px 0px 17%;
+   width: 83%;
+   height: 66px;
+ }
+.header {
+  display: flex;
+  justify-content: flex-start;
   font-family: regular;
-  grid-row: header_global  ;
-  grid-column:1 ;
-    width: 100%;
-    height: 66px;
-    background-color: #373737;
-    font-family: Nexa;
-    color: #ffffff;
-    }
-.header_cube {
-    display: grid;
-    grid-row: -2 ;
-    grid-column: 1 ;
-    margin: 0px 0px 0px 300px;
-    width: 78px;
-    height: 66px;
-    background-color: #f26c4f;
+  width: 100%;
+  height: 66px;
+  background-color: #373737;
+  font-family: Nexa;
+  color: #ffffff;
   }
-.header_text {
+.header_cube {
+  display: flex;
+  position: absolute;
+  margin: 0px 0px 0px 0%;
+  width: 78px;
+  height: 66px;
+  background-color: #f26c4f;
+  }
+div .header_text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: fixed;
   font-family: regular;
-  display:grid;
-  grid-row:  -2 ;
-  grid-column: 1 ;
-  margin: 23px 0px 0px 402px;
+  font-size: 20px;
+  text-align: center;
+  margin: 20px 0px 0px 100px;
 }
 .text_cube {
   display: flex;
@@ -49,10 +60,8 @@
   margin: 0% 0px 10px 40%;
 }
 .header_cube_sternch {
-  display: grid;
-  margin: 25px 0px 0px 353px;
-  grid-row: -2;
-  grid-column: 1;
+  position: absolute;
+  margin: 25px 0px 0px 65%;
   height: 20px;
   width: 40px;
   background-color: #f26c4f;
@@ -68,10 +77,13 @@
     font-family: Nexa;
     color: #ffffff;
 }
+.padding{
+  padding-left: 15%;
+}
 .to_header_text {
   font-family: regular;
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap-reverse;
   /* border-left: 1.5px solid rgb(150, 140, 140); */
@@ -98,11 +110,11 @@
   display: flex;
   text-align: center;
   position: relative;
-  padding: 15px 0px 10px 0px;
+  padding: 0px 0px 10px 15px;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  margin: 0px 0px 0px -0vh
+  margin: 0px 0px 0px -0vh;
 }
 form {
   position: relative;
@@ -277,6 +289,9 @@ div .row {
   align-content: stretch;
   align-items: flex-start;
 }
+div .fix_column{
+  font-size: 1.64rem;
+}
 .mid_png {
   max-width: 100%;
   max-height: 30vh;
@@ -331,29 +346,81 @@ h3 {
 .box_1 {
   display: flex;
 }
-div .left_text_head {
-  padding: 1.25rem;
-  text-align: left;
+div .right_text_head {
+  position: relative;
+  padding: 1rem 1rem 0rem 1rem;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.24;
 }
 .right_card {
   display: flex;
   justify-content: space-around;
   max-width: 100%;
 }
+div div .to_card{
+  box-shadow: 0 .0rem .0rem rgba(0, 0, 0, 0)!important;
+  background: rgba(255, 255, 255, 0);
+  margin: 0px 18px 30px;
+  border-bottom: 1px solid black;
+}
+div div div .r_head {
+  font-size: 19px;
+  text-align: left;
+}
+.text_grey{
+  color: #a7a7a7;
+}
+.right_text {
+  text-align: left;
+  font-size: 12px;
+}
 div .r_card {
   color: #ffffff;
   background-color: #373737;
 }
+.sidebar-info {
+  width: 100%;
+  height: 10vh;
+  box-shadow: 0px 1px 1px 0 #000000;
+  background-color: #ffffff;
+  border-left: 3px solid #cacaca;
+  padding-bottom: 10px;
+  margin-block-start: 1rem;
+}
+.sidebar-info__text {
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 2.25;
+  color: #474747;
+}
+.sidebar-info__span {
+  padding-left: 10px;
+  font-size: 12px;
+  line-height: 1.92;
+  color: #a7a7a7;
+}
+
 div div .left_card {
   width: 100%;
   border-left: 4px solid #f26c4f;
 }
-div .right_text_head{
+div .left_text_head{
   padding: 1.25rem;
   text-align: left;
 }
 div .card {
   border: 0px;
+}
+.c_fix{
+  color: grey;
+
+}
+.card_down_text{
+  font-size: 14px;
+  text-align: left;
+  color: grey;
 }
 @media (min-width: 768px){ /*проблем фикс*/
 div .col-md-4 {
@@ -366,4 +433,35 @@ div .col-md-8 {
     flex: 100%;
     max-width: 100%;
 }
+}
+footer {
+  min-height: 140px;
+  background-color: #373737;
+}
+
+.footer {
+  margin: 8px 20.7%;
+  font-family: Arial, sans-serif;
+}
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer__item {
+  padding: 38px 15px 0px 0px;
+  font-size: 12px;
+}
+
+.footer__link {
+  font-size: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__text {
+  font-size: 11px;
+  line-height: 1.91;
+  color: #7e7e7e;
 }
