@@ -19,7 +19,7 @@
    width: 20px;
    justify-content: flex-start;
    display: flex;
-   position: fixed;
+   position: absolute;
    margin: 0px 0px 0px 17%;
    width: 83%;
    height: 66px;
@@ -46,7 +46,7 @@ div .header_text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  position: fixed;
+  position: absolute;
   font-family: regular;
   font-size: 20px;
   text-align: center;
@@ -173,7 +173,7 @@ div .global_face{
   margin: 0% 0% 20px 0% ;
   justify-content: center;
 }
-@media(min-width: 600px){div div .flex, .global_face {
+@media(min-width: 700px){div div .flex, .global_face {
   display: inline-flex;
   justify-content: center;
   min-width: 90%;
@@ -182,7 +182,7 @@ div .global_face{
 
 }
 }
-@media(max-width: 600px){div .flex, div .global_face , .lond,div .londo_info_head,div .londo_info_text {
+@media(max-width: 700px){div .flex, div .global_face , .lond,div .londo_info_head,div .londo_info_text , .right_card , .right_text , .contayner_2 {
   display: -webkit-flex; 
   display: flex;
   justify-content: center;
@@ -194,7 +194,7 @@ div .global_face{
   
 }
 }
-@media(max-width: 600px){div div .global_face , .lond,div .londo_info_head,div .londo_info_text{
+@media(max-width: 700px){div div .global_face , .lond,div .londo_info_head,div .londo_info_text{
   padding: 0% 2% 0% 3%;
 }
 }
@@ -303,11 +303,11 @@ div .fix_column{
     min-width: 73%;
 }
 }
-@media (max-width: 600px){div .container {
+@media (max-width: 700px){div .container {
     max-width: 100%;
 }
 }
-@media (max-width: 600px){div .box_1 {
+@media (max-width: 700px){div .box_1 {
   display: flex;
   flex-wrap: wrap;
 }
@@ -334,6 +334,10 @@ h3 {
   align-self:flex-start;
   width: 100%;
   
+}
+div .left_butom :hover{
+  color: #ffe; /* Цвет текста активного пункта */
+  background-color: #f26c4f;
 }
 .contayner_2 {
   display: flex;
