@@ -96,11 +96,13 @@
 }
 .search {
   display: flex;
-  padding: 15px 0px;
+  text-align: center;
+  position: relative;
+  padding: 15px 0px 10px 0px;
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: nowrap;
-  margin: 0px 0px 0px -10vh
+  margin: 0px 0px 0px -0vh
 }
 form {
   position: relative;
@@ -151,17 +153,17 @@ div .icon_top {
   font-weight: 100;
 }
 div .global_face{
+  position: relative;
   padding-left: 15px;
-  justify-content: flex-start;
+  padding-right: 15px;
   align-content: flex-start;
   width: auto;
   margin: 0% 0% 20px 0% ;
+  justify-content: center;
 }
 @media(min-width: 600px){div div .flex, .global_face {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  max-width: 100%;
-  max-height: 20%;
   min-width: 90%;
   padding: 0% 0% 0% 0%;
   align-content: center;
@@ -180,6 +182,10 @@ div .global_face{
   
 }
 }
+@media(max-width: 600px){div div .global_face , .lond,div .londo_info_head,div .londo_info_text{
+  padding: 0% 2% 0% 3%;
+}
+}
 /* .flex div {
   padding: 0px;
 } */
@@ -187,18 +193,33 @@ div .lond {
   width: 100%;
   height: 391px;
   background-image: url(/png/Layer_4.png);
-  margin: 0% 0% 20px 0% ;
+  flex: 350vh;
 }
-div .lond_info {
-  width: 100%;
+div .londo_info {
+  width: 50%;
   background: #373737;
-  margin: 0px;
+  margin: 0px ;
+  height: auto;
+  border-left: 10px solid #f26c4f;
+  flex: 170vh;
+}
+.pre_streg{
+  position: absolute;
+  padding-top: 6%;
+}
+.streg {
+  display: flex;
+  position: absolute;
+  padding-top: 20px;
+  height: 20px;
+  width: 10px;
+  margin: 0%;
+  background-color: #f26c4f;
+  clip-path: polygon(100% 50%, 0 0, 0 100%);
 }
 .lond_info, .londo_info_head, .londo_info_text {
   background: #373737;
   flex-direction: column;
-  width: 40%;
-  max-height: 391px;
 }
 .londo_info_head {
   display: flex;
@@ -209,11 +230,11 @@ div .lond_info {
   line-height: 1.26;
   letter-spacing: -0.19px;
   text-align: left;
-  padding: 7% 10% 0px 46px;
+  padding: 20% 10% 0px 46px;
   text-indent: 0em; /* Отступ первой строки */
   margin: 0px;
 }
-.londo_info_text { /*aaaaaaaaaaaaaaaaaaaaa*/
+div .londo_info_text { /*aaaaaaaaaaaaaaaaaaaaa*/
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   color: #a7a7a7;
@@ -228,12 +249,14 @@ div .lond_info {
   text-align: left;
   padding: 4% 10% 0px 46px;
   text-indent: 0em; /* Отступ первой строки */
-  margin: 0% 0% 20px 0% ;
+  margin: 10% 0% 20px 0% ;
 }
 .londo_info_text_time{
+  justify-items: flex-end;
   box-sizing: content-box ;
-  padding: 10px 0px 0% 10px ;
+  padding: 10px 0px 0% 10% ;
   margin: 0px;
+  text-align: right;
 }
 .icon_time {
   background-color: #373737;
